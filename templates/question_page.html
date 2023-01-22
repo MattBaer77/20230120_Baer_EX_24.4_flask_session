@@ -6,7 +6,7 @@
 
 <h2>{{question}}</h2>
 
-<form action="/answer" method="post">
+<form action="/answer/{{this_question}}" method="post">
 
     {% for choice in survey_choices %}
     <label for="{{choice}}">{{choice}}</label>
